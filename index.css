@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: rgb(224, 206, 206);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+
+}
+
+li {
+    display: inline-block;
+    margin-right: 83px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}
+
+nav,
+h1 {
+    margin: 12px 0px 12px 12px;
+
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav.ul {
+    margin: 12px 0px 12px 12px;
+}
+
+nav h1 {
+    animation: slidein 2s ease-in-out;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 29px;
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(-140%);
+    }
+
+    100% {
+        transform: translateX(0%);
+
+    }
+}
+
+.good {
+    display: inline-block;
+    animation: slidein 1s forwards,
+        rotate360 2s 2s forwards;
+}
+
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+        color:black;
+    }
+    100% {
+        transform: rotate(180deg);
+        color:blue;
+    }
+}
+
+
+
+ nav li{
+    animation:list 3s ease-in-out; 
+}
+
+@keyframes list{
+    0%{
+       opacity: 0;
+    }
+100%{
+    opacity: 1;
+}
+} 
+
+section {
+
+    position: relative;
+    overflow-x: hidden;
+    transform: translate(5%, 83%);
+    width: 900px;
+
+
+
+}
+
+section p {
+    line-height: 65px;
+    letter-spacing: 2.5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 39px;
+    font-weight: bold;
+    animation: word 2s ease-in-out;
+}
+
+@keyframes word{
+    0%{
+        opacity: 0%;
+    }
+
+}
+
+section span {
+    opacity: 0;
+    transform: translateX(-10px);
+    animation: wordss 0.5s forwards;
+}
+
+@keyframes wordss {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#nine {
+    animation-delay: 1s;
+}
+
+#ten {
+    animation-delay: 1.5s;
+}
+
+#elven {
+    animation-delay: 2s;
+}
+
+#twelve {
+    animation-delay: 2.5s;
+}
+
+#thirteen {
+    animation-delay: 3s;
+}
+
+#first {
+    animation-delay: 3.5s;
+}
+
+#second {
+    animation-delay: 4s;
+}
+
+#three {
+    animation-delay: 4.5s;
+}
+
+#four {
+    animation-delay: 5s;
+}
+
+#five {
+    animation-delay: 5.5s;
+}
+
+#six {
+    animation-delay: 6s;
+}
+
+#seven {
+    animation-delay: 6.5s;
+}
+
+#eight {
+    animation-delay: 7s;
+}
+
+
+
+
+img {
+    max-width: 29%;
+    position: relative;
+    transform: translate(200%, -17%);
+    animation: imagesss 2s ease-out;
+
+}
+
+@keyframes imagesss{
+    0%
+    {
+        transform: translate(200%,-200%);
+    }
+    100%{
+        transform: translate(200%,-17%);
+    }
+ }
